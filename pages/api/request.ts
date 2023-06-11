@@ -39,7 +39,7 @@ export default async function handler(req: NextRequest) {
   };
 
   const payload = {
-    model: "gpt-3.5-turbo",
+    model: "ada:ft-aibt-2023-06-09-20-38-00",
     messages: systemMessage ? [systemMessage, userMessage] : [userMessage],
     stream: true,
   };
